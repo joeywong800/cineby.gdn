@@ -53,7 +53,7 @@ export default function Footer() {
               style={{
                 fontSize: "var(--text-xs)",
                 fontWeight: "var(--font-bold)",
-                color: "var(--gold)",
+                color: "var(--red)",
                 textTransform: "uppercase",
                 letterSpacing: "0.07em",
                 margin: 0,
@@ -70,7 +70,7 @@ export default function Footer() {
               margin: 0,
             }}
           >
-            Flixet does not host, store, or distribute any video content. All
+            Cineby does not host, store, or distribute any video content. All
             videos are embedded from third-party sources. We do not claim
             ownership of any content displayed on this website. All trademarks,
             logos, and brand names are the property of their respective owners.
@@ -100,7 +100,7 @@ export default function Footer() {
                 borderBottom: "1px solid var(--border)",
               }}
             >
-              <Film size={16} color="var(--gold)" />
+              <Film size={16} color="var(--red)" />
               <h3
                 style={{
                   fontSize: "var(--text-base)",
@@ -108,7 +108,7 @@ export default function Footer() {
                   margin: 0,
                 }}
               >
-                About Flixet
+                About Cineby
               </h3>
             </div>
             <p
@@ -141,16 +141,16 @@ export default function Footer() {
                   color: "var(--text-tertiary)",
                 }}
               >
-                <Mail size={13} color="var(--gold)" />
+                <Mail size={13} color="var(--red)" />
                 <a
                   href="mailto:contact@cineby.gdn"
                   style={{
-                    color: "var(--gold)",
+                    color: "var(--red)",
                     textDecoration: "none",
                     fontWeight: "var(--font-semibold)",
                   }}
                 >
-                  devajuice@zohomail.in
+                  contact@cineby.gdn
                 </a>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function Footer() {
                 borderBottom: "1px solid var(--border)",
               }}
             >
-              <Tv size={16} color="var(--gold)" />
+              <Tv size={16} color="var(--red)" />
               <h3
                 style={{
                   fontSize: "var(--text-base)",
@@ -235,7 +235,7 @@ export default function Footer() {
                 borderBottom: "1px solid var(--border)",
               }}
             >
-              <Shield size={16} color="var(--gold)" />
+              <Shield size={16} color="var(--red)" />
               <h3
                 style={{
                   fontSize: "var(--text-base)",
@@ -367,7 +367,7 @@ export default function Footer() {
                 display: "inline-flex",
                 alignItems: "center",
                 gap: 6,
-                color: "var(--gold)",
+                color: "var(--red)",
                 textDecoration: "none",
                 fontWeight: "var(--font-bold)",
                 fontSize: "var(--text-sm)",
