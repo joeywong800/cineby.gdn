@@ -8,15 +8,15 @@ import { ContinueWatchingProvider } from "@/context/ContinueWatchingContext";
 import { HistoryProvider } from "@/context/HistoryContext";
 
 export const metadata = {
-  metadataBase: new URL("https://flixet.vercel.app"),
-  title: "Flixet - Watch Movies, TV Shows and Anime Free",
+  metadataBase: new URL("https://cineby.gdn"),
+  title: "Cineby - Watch Free Movies &amp; TV Shows Online",
   description:
-    "Stream Movies, TV shows and Anime for free. No subscription required. Watch thousands of movies and series online.",
+    "Watch free movies and TV shows online in HD on Cineby. Stream the latest films, series and anime for free on Cineby, no signup required.",
   keywords:
-    "free movies, watch movies online, stream tv shows, free streaming, movies online, anime streaming",
-  authors: [{ name: "Devajuice" }],
-  creator: "Devajuice",
-  publisher: "Devajuice",
+    "cineby, cineby.at, watch free movies, free movies to watch online, watch movies online free, free movies streaming, free movies full, free movies download, watch movies hd, movies to watch, plus, ver, assistir,filmes, series, seriados, online, gratis, torrent, legendado, dublados, Series, HD, 720p, 1080p, 4k, cinema",
+  authors: [{ name: "Cineby" }],
+  creator: "Cineby",
+  publisher: "Cineby",
   robots: {
     index: true,
     follow: true,
@@ -35,25 +35,25 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://flixet.vercel.app",
-    siteName: "Flixet",
-    title: "Flixet - Watch Movies, TV Shows and Anime",
+    url: "https://cineby.gdn",
+    siteName: "Cineby",
+    title: "Cineby - Watch Free Movies & TV Shows Online",
     description:
-      "Stream thousands of Movies, TV shows and Anime for free. No subscription required.",
+      "Watch free movies and TV shows online in HD on Cineby. Stream the latest films, series and anime for free on Cineby, no signup required.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Flixet - Free Movies, TV Shows and Anime",
+        alt: "Cineby - Watch Free Movies & TV Shows Online",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Flixet - Watch Movies, TV Shows & Anime",
+    title: "Cineby - Watch Free Movies & TV Shows Online",
     description:
-      "Stream Movies, TV shows and Anime for free. No subscription required.",
+      "Watch free movies and TV shows online in HD on Cineby. Stream the latest films, series and anime for free on Cineby, no signup required.",
     images: ["/og-image.png"],
   },
 };
@@ -89,7 +89,7 @@ export default function RootLayout({ children }) {
               style={{
                 minHeight: "100vh",
                 paddingTop: "var(--space-10)",
-                paddingBottom: "var(--space-16)",
+                paddingBottom: "var(--space-0)",
               }}
             >
               {children}
