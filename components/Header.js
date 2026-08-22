@@ -124,10 +124,10 @@ export default function Header() {
     <>
       <motion.header
         initial={{ y: -80, opacity: 0 }}
-        animate={{ y: 0, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.45, ease: "easeOut" }}
         style={{
-          background: "linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));",
+          background: "linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));",
           position: "sticky",
           top: 0,
           zIndex: 1000,
