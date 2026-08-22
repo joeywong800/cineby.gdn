@@ -9,7 +9,7 @@ import { HistoryProvider } from "@/context/HistoryContext";
 
 export const metadata = {
   metadataBase: new URL("https://cineby.gdn"),
-  title: "Cineby - Watch Free Movies &amp; TV Shows Online",
+  title: "Cineby - Watch Free Movies & TV Shows Online",
   description:
     "Watch free movies and TV shows online in HD on Cineby. Stream the latest films, series and anime for free on Cineby, no signup required.",
   keywords:
@@ -88,7 +88,7 @@ export default function RootLayout({ children }) {
               id="main-content"
               style={{
                 minHeight: "100vh",
-                paddingTop: "var(--space-10)",
+                paddingTop: "var(--space-0)",
                 paddingBottom: "var(--space-0)",
               }}
             >
