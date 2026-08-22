@@ -333,7 +333,7 @@ export default function TermsOfService() {
           </h1>
           <p className="last-updated">Last Updated: February 25, 2026</p>
           <p className="terms-subtitle">
-            Please read these terms carefully before using Flixet. By accessing
+            Please read these terms carefully before using Cineby. By accessing
             our website, you agree to be bound by these terms.
           </p>
         </div>
@@ -359,7 +359,7 @@ export default function TermsOfService() {
             content: (
               <>
                 <p className="terms-text">
-                  Flixet is a free online streaming aggregator that provides
+                  Cineby is a free online streaming aggregator that provides
                   links to movies and TV shows hosted on third-party platforms.
                   We do not host, upload, or store any video content on our
                   servers.
@@ -448,7 +448,7 @@ export default function TermsOfService() {
                 All content, trademarks, and data on this Website are the
                 property of their respective copyright holders. We respect
                 intellectual property rights and expect our users to do the
-                same. Flixet does not claim ownership of any content available
+                same. Cineby does not claim ownership of any content available
                 through the Website.
               </p>
             ),
@@ -566,7 +566,7 @@ export default function TermsOfService() {
                   <p>
                     Reach out through the contact information provided on our
                     website or email us at{" "}
-                    <strong>devajuice@zohomail.in</strong>
+                    <strong>contact@cineby.gdn</strong>
                   </p>
                 </div>
               </>
