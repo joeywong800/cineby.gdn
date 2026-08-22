@@ -34,7 +34,7 @@ export default function Footer() {
           style={{
             background: "rgba(255,255,255,0.02)",
             border: "1px solid var(--border)",
-            borderLeft: "3px solid var(--gold)",
+            borderLeft: "3px solid var(--red)",
             borderRadius: "var(--radius-xl)",
             padding: "22px 24px",
             marginBottom: 52,
