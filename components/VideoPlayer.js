@@ -12,18 +12,24 @@ const SERVERS = {
     },
     {
       label: "VidCore",
-      url: (id) => `https://vidcore.net/movie/${id}?theme=e50914`,
+      url: (id) => `https://vidcore.net/movie/${id}?theme=f73718&autoPlay=true`,
     },
     {
       label: "VidLink",
       url: (id) =>
-        `https://vidlink.pro/movie/${id}?primaryColor=e50914&autoplay=true`,
+        `https://vidlink.pro/movie/${id}?primaryColor=f73718&autoplay=true`,
     },
     {
       label: "VidSrc",
-      url: (id) => `https://vidsrc.me/embed/movie?tmdb=${id}`,
+      url: (id) => `https://vsembed.su/embed/movie/${id}?autoplay=true&colour=f73718`,
     },
-    { label: "2embed", url: (id) => `https://www.2embed.cc/embed/${id}` },
+    {
+      label: "CineSrc",
+      url: (id) => `https://cinesrc.st/embed/movie/${id}?autoplay=true&color=%23f73718`,
+    },
+    { 
+    label: "Videm", 
+    url: (id) => `https://videm.xyz/embed/movie/${id}`},
   ],
   tv: [
     {
@@ -34,21 +40,26 @@ const SERVERS = {
     {
       label: "VidCore",
       url: (id, s, e) =>
-        `https://vidcore.net/tv/${id}/${s}/${e}?theme=e50914&autoPlay=true`,
+        `https://vidcore.net/tv/${id}/${s}/${e}?theme=f73718&autoPlay=true`,
     },
     {
       label: "VidLink",
       url: (id, s, e) =>
-        `https://vidlink.pro/tv/${id}/${s}/${e}?primaryColor=e50914&autoplay=true&nextbutton=true`,
+        `https://vidlink.pro/tv/${id}/${s}/${e}?primaryColor=f73718&autoplay=true&nextbutton=true`,
     },
     {
       label: "VidSrc",
       url: (id, s, e) =>
-        `https://vidsrc.me/embed/tv?tmdb=${id}&season=${s}&episode=${e}`,
+        `https://vsembed.su/embed/tv/${id}/${s}-${e}?autoplay=1&autonext=1`,
     },
     {
-      label: "2embed",
-      url: (id, s, e) => `https://www.2embed.cc/embedtv/${id}?s=${s}&e=${e}`,
+      label: "CineSrc",
+      url: (id, s, e) =>
+        `https://cinesrc.st/embed/tv/${id}?s=${s}&e=${e}&autoplay=true&autonext=true&color=%23f73718`,
+    },
+    {
+      label: "Videm",
+      url: (id, s, e) => `https://videm.xyz/embed/tv/${id}/${s}/${e}`,
     },
   ],
 };
