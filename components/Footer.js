@@ -119,7 +119,7 @@ export default function Footer() {
                 margin: 0,
               }}
             >
-              Flixet is a free streaming aggregator that provides links to
+              Cineby is a free streaming aggregator that provides links to
               movies and TV shows from various third-party sources. We do not
               upload or host any files on our servers.
             </p>
@@ -143,7 +143,7 @@ export default function Footer() {
               >
                 <Mail size={13} color="var(--gold)" />
                 <a
-                  href="mailto:devajuice@zohomail.in"
+                  href="mailto:contact@cineby.gdn"
                   style={{
                     color: "var(--gold)",
                     textDecoration: "none",
@@ -320,7 +320,7 @@ export default function Footer() {
               margin: 0,
             }}
           >
-            © {currentYear} Flixet. All rights reserved.
+            © {currentYear} Cineby. All rights reserved.
           </p>
           <div
             style={{
@@ -332,7 +332,7 @@ export default function Footer() {
               color: "var(--text-muted)",
             }}
           >
-            Made with <Heart size={13} color="var(--accent)" /> by Flixet Team
+            Made with <Heart size={13} color="var(--accent)" /> by Cineby Team
           </div>
           <div
             style={{
