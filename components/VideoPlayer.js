@@ -6,6 +6,11 @@ import { X, Server, ChevronDown, ChevronUp, Play } from "lucide-react";
 const SERVERS = {
   movie: [
     {
+      label: "MainSrc",
+      url: (id) =>
+        `https://video.ffmovies.org/watch/movie/${id}`,
+    },
+    {
       label: "VidCore",
       url: (id) => `https://vidcore.net/movie/${id}?theme=e50914`,
     },
@@ -22,9 +27,14 @@ const SERVERS = {
   ],
   tv: [
     {
+      label: "MainSrc",
+      url: (id, s, e) =>
+        `https://video.ffmovies.org/watch/tv/${id}?s=${s}&e=${e}`,
+    },
+    {
       label: "VidCore",
       url: (id, s, e) =>
-        `https://vidcore.net/tv/${id}/${s}/${e}?theme=e50914`,
+        `https://vidcore.net/tv/${id}/${s}/${e}?theme=e50914&autoPlay=true`,
     },
     {
       label: "VidLink",
