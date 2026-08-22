@@ -266,7 +266,7 @@ export default function MediaCard({
   return showRemove ? (
     <div style={{ display: "block" }}>{cardContent}</div>
   ) : (
-    <Link href={`/${slug}/${item.id}`} style={{ display: "block" }}>
+    <Link href={href} style={{ display: "block" }}>
       {cardContent}
     </Link>
   );
