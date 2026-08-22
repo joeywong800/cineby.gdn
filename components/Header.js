@@ -140,7 +140,7 @@ export default function Header() {
             <div className="header-logo-icon">
               <Film size={18} fill="white" color="white" strokeWidth={0} />
             </div>
-            <span>Flixet</span>
+            <span>Cineby</span>
           </Link>
 
           {!isMobile && (
