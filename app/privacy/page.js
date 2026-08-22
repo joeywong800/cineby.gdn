@@ -336,7 +336,7 @@ export default function PrivacyPolicy() {
             <Shield size={40} />
             Privacy Policy
           </h1>
-          <p className="prv-last-updated">Last Updated: February 25, 2026</p>
+          <p className="prv-last-updated">Last Updated: August 22, 2026</p>
           <p className="prv-subtitle">
             Your privacy matters to us. Learn how we handle information and
             protect your data while using Flixet.
@@ -351,7 +351,7 @@ export default function PrivacyPolicy() {
             content: (
               <>
                 <p className="prv-text">
-                  Flixet does not collect personal information from users.
+                  Cineby does not collect personal information from users.
                   However, we may collect:
                 </p>
                 <ul className="prv-list">
@@ -508,7 +508,7 @@ export default function PrivacyPolicy() {
                   <div>
                     <div className="prv-contact-label">Email us at</div>
                     <div className="prv-contact-email">
-                      devajuice@zohomail.in
+                      contact@cineby.gdn
                     </div>
                   </div>
                 </div>
