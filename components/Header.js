@@ -127,7 +127,7 @@ export default function Header() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.45, ease: "easeOut" }}
         style={{
-          background: "linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 10%);",
+          background: "linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 90%, rgba(0, 0, 0, 0.9) 10%);",
           position: "sticky",
           top: 0,
           zIndex: 1000,
