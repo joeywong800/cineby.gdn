@@ -21,6 +21,10 @@
     --accent-subtle: rgba(229, 9, 20, 0.1);
     --accent-border: rgba(229, 9, 20, 0.3);
 
+    --red: #f73718;
+    --red-subtle: rgba(247, 55, 24, 0.1);
+    --redborder: rgba(207, 25, 32, 0.3);
+
     --gold: #f5c518;
     --gold-subtle: rgba(245, 197, 24, 0.1);
     --gold-border: rgba(245, 197, 24, 0.3);
