@@ -1,7 +1,7 @@
 {
-  "name": "Flixet - Watch Movies, TV Shows & Anime",
-  "short_name": "Flixet",
-  "description": "Stream unlimited movies, TV shows, and anime for free. Discover trending content, create watchlists, and enjoy seamless streaming on any device.",
+  "name": "Cineby - Watch Free Movies & TV Shows Online",
+  "short_name": "Cineby",
+  "description": "Watch free movies and TV shows online in HD on Cineby. Stream the latest films, series and anime for free on Cineby, no signup required.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
