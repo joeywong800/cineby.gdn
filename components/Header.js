@@ -241,8 +241,9 @@ export default function Header() {
           justify-content: center;
         }
         .header-logo span {
-          font-size: var(--text-xl);
-          font-weight: var(--font-extrabold);
+          font-size: var(--text-2xl);
+          font-weight: var(--font-bold);
+          line-height: 2rem;
           letter-spacing: -0.03em;
           color: var(--text-primary);
         }
