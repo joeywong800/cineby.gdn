@@ -130,8 +130,8 @@ export default function Header() {
           background: "background: linear-gradient(rgba(0, 0, 0, 0.8) 5%, transparent 100%);",
           position: "absolute",
           top: 0,
-          left: 50%,
-          transform: translateX(-50%),
+          left: "50%",
+          transform: "translateX(-50%)",
           zIndex: 1000,
           backdropFil: "blur(20px)",
         }}
