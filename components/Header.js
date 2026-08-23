@@ -131,7 +131,7 @@ export default function Header() {
           display: "flex",
           position: "absolute",
           top: 0,
-          left: "35%",
+          left: 0,
           right: "auto",
           zIndex: 1000,
         }}
