@@ -132,8 +132,7 @@ export default function Header() {
           position: "absolute",
           top: 0,
           left: "50%",
-          transform: "translateX(-50%)",
-          justify-content: "center",
+          right: "-25%",
           zIndex: 1000,
           backdropFil: "blur(20px)",
         }}
