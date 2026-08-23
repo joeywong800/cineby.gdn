@@ -1311,6 +1311,7 @@ function TVShowDetailsContent({ params }) {
                         onClick={() => {
                           setSelSeason(s.season_number);
                           setSelEpisode(1);
+                          setShowPlayer(true)
                         }}
                         whileTap={{ scale: 0.96 }}
                         className={`season-btn ${selSeason === s.season_number ? "active" : ""}`}
@@ -1363,7 +1364,12 @@ function TVShowDetailsContent({ params }) {
                         key={ep.id}
                         ep={ep}
                         isActive={selEpisode === ep.episode_number}
-                        onClick={() => setSelEpisode(ep.episode_number)}
+                        onClick={() => {
+                          setSelEpisode(ep.episode_number);
+                          setSelSeason(s.season_number);
+                          setSelEpisode(ep.episode_number);
+                          setShowPlayer(true)
+                        }}
                         omdb={omdbCache[`S${selSeason}E${ep.episode_number}`]}
                         index={idx}
                       />
