@@ -48,6 +48,7 @@ export default function MediaCard({
       transition={{ delay: Math.min((index || 0) * 0.04, 0.4), duration: 0.3 }}
       style={{
         width: "200px",
+        padding-right: "6px",
         margin: "0 auto",
         position: "relative",
         borderRadius: "var(--radius-lg)",
