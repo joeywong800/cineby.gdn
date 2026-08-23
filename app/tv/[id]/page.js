@@ -38,7 +38,7 @@ const IMG = "https://image.tmdb.org/t/p";
 function SkeletonPage() {
   return (
     <div>
-      <SkeletonEl width="100%" height="70vh" minHeight={400} borderRadius={0} />
+      <SkeletonEl width="100%" height="100vh" minHeight={580} borderRadius={0} />
       <div
         style={{
           maxWidth: 1400,
@@ -584,7 +584,7 @@ function TVShowDetailsContent({ params }) {
 
   if (loading)
     return (
-      <SkeletonEl width="100%" height="80vh" minHeight={400} borderRadius={0} />
+      <SkeletonEl width="100%" height="100vh" minHeight={580} borderRadius={0} />
     );
   if (error || !show)
     return (
@@ -1310,7 +1310,7 @@ function TVShowDetailsContent({ params }) {
                         key={s.id}
                         onClick={() => {
                           setSelSeason(s.season_number);
-                          setSelEpisode(s.episode_number);
+                          setSelEpisode(ep.episode_number);
                         }}
                         whileTap={{ scale: 0.96 }}
                         className={`season-btn ${selSeason === s.season_number ? "active" : ""}`}
@@ -1333,7 +1333,7 @@ function TVShowDetailsContent({ params }) {
                       );
                       if (idx < validSeasons.length - 1) {
                         setSelSeason(validSeasons[idx + 1].season_number);
-                        setSelEpisode(seasonData.episodes[idx + 1].episode_number);
+                        setSelEpisode(1);
                       }
                     }}
                     disabled={!hasNextSeason}
@@ -1372,7 +1372,8 @@ function TVShowDetailsContent({ params }) {
                         setSelEpisode(ep.episode_number);
                       }
                     }}
-                        onClick={() => setSelEpisode(ep.episode_number) setShowPlayer(true)}
+                        onClick={() => setShowPlayer(true)}
+                        disabled={!selSeason || !selEpisode}
                         omdb={omdbCache[`S${selSeason}E${ep.episode_number}`]}
                         index={idx}
                       />
