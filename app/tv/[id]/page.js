@@ -584,7 +584,7 @@ function TVShowDetailsContent({ params }) {
 
   if (loading)
     return (
-      <SkeletonEl width="100%" height="70vh" minHeight={400} borderRadius={0} />
+      <SkeletonEl width="100%" height="80vh" minHeight={400} borderRadius={0} />
     );
   if (error || !show)
     return (
@@ -625,7 +625,7 @@ function TVShowDetailsContent({ params }) {
   const cast = show.credits?.cast?.slice(0, 16) || [];
   const validSeasons = show.seasons?.filter((s) => s.season_number > 0) || [];
   const watchProviders = (show["watch/providers"] ?? show["watch%2Fproviders"])
-    ?.results?.[process.env.NEXT_PUBLIC_TMDB_REGION || "IN"];
+    ?.results?.[process.env.NEXT_PUBLIC_TMDB_REGION || "US"];
   const creators = show.created_by || [];
   const tagline = show.tagline;
 
@@ -1365,6 +1365,15 @@ function TVShowDetailsContent({ params }) {
                         isActive={selEpisode === ep.episode_number}
                         onClick={() => setSelEpisode(ep.episode_number)}
                         onClick={() => setShowPlayer(true)}
+                    onClick={() => {
+                      const idx = validSeasons.findIndex(
+                        (s) => s.season_number === selSeason,
+                      );
+                      if (idx < validSeasons.length - 1) {
+                        setSelSeason(validSeasons[idx + 1].season_number);
+                        setSelEpisode(ep.episode_number);
+                      }
+                    }}
                         omdb={omdbCache[`S${selSeason}E${ep.episode_number}`]}
                         index={idx}
                       />
