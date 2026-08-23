@@ -1296,7 +1296,7 @@ function TVShowDetailsContent({ params }) {
                       );
                       if (idx > 0) {
                         setSelSeason(validSeasons[idx - 1].season_number);
-                        setSelEpisode(1);
+                        setSelEpisode(seasonData.episodes[idx + 1].episode_number);
                       }
                     }}
                     disabled={currentSeasonIdx === 0}
@@ -1310,7 +1310,7 @@ function TVShowDetailsContent({ params }) {
                         key={s.id}
                         onClick={() => {
                           setSelSeason(s.season_number);
-                          setSelEpisode(1);
+                          setSelEpisode(s.episode_number);
                         }}
                         whileTap={{ scale: 0.96 }}
                         className={`season-btn ${selSeason === s.season_number ? "active" : ""}`}
@@ -1333,7 +1333,7 @@ function TVShowDetailsContent({ params }) {
                       );
                       if (idx < validSeasons.length - 1) {
                         setSelSeason(validSeasons[idx + 1].season_number);
-                        setSelEpisode(1);
+                        setSelEpisode(seasonData.episodes[idx + 1].episode_number);
                       }
                     }}
                     disabled={!hasNextSeason}
