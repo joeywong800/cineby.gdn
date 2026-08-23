@@ -48,7 +48,6 @@ export default function MediaCard({
       transition={{ delay: Math.min((index || 0) * 0.04, 0.4), duration: 0.3 }}
       style={{
         width,
-        padding-right: "6px",
         margin: "0 auto",
         position: "relative",
         borderRadius: "var(--radius-lg)",
@@ -69,8 +68,8 @@ export default function MediaCard({
           fill
           sizes={
             variant === "backdrop"
-              ? "(max-width: 768px) 240px, 240px"
-              : "(max-width: 768px) 140px, 140px"
+              ? "(max-width: 768px) 140px, 140px"
+              : "(max-width: 768px) 200px, 200px"
           }
           style={{
             objectFit: "cover",
@@ -83,8 +82,8 @@ export default function MediaCard({
       ) : (
         <div
           style={{
-            width: "100%",
-            height: "100%",
+            width: "989",
+            height: "98%",
             background: "var(--bg-tertiary)",
             display: "flex",
             alignItems: "center",
@@ -180,8 +179,8 @@ export default function MediaCard({
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               style={{
-                width: 28,
-                height: 28,
+                width: 44,
+                height: 44,
                 borderRadius: "var(--radius-md)",
                 background: "rgba(0,0,0,0.7)",
                 backdropFilter: "blur(8px)",
