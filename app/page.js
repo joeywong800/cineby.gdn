@@ -101,7 +101,7 @@ function HeroBanner({ items }) {
       style={{
         position: "relative",
         width: "100%",
-        height: "clamp(320px, 65vh, 700px)",
+        height: "clamp(320px, 75vh, 800px)",
         overflow: "hidden",
       }}
     >
