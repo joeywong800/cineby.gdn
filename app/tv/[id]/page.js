@@ -1364,6 +1364,7 @@ function TVShowDetailsContent({ params }) {
                         ep={ep}
                         isActive={selEpisode === ep.episode_number}
                         onClick={() => setSelEpisode(ep.episode_number)}
+                        onClick={() => setShowPlayer(true)}
                         omdb={omdbCache[`S${selSeason}E${ep.episode_number}`]}
                         index={idx}
                       />
