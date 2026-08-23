@@ -129,12 +129,9 @@ export default function Header() {
         style={{
           background: "background: linear-gradient(rgba(0, 0, 0, 0.8) 5%, transparent 100%);",
           display: "flex",
-          position: "absolute",
+          position: "sticky",
           top: 0,
-          left: "50%",
-          transform: "translate(50%)",
-          zIndex: 1000,
-          backdropFil: "blur(20px)",
+          zIndex: 1000
         }}
       >
         <div className="header-inner">
