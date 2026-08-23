@@ -130,11 +130,11 @@ export default function Header() {
           background: "background: linear-gradient(rgba(0, 0, 0, 0.8) 5%, transparent 100%);",
           display: "flex",
           width: "100%",
-          position: "absolute",
+          position: "relative",
           top: 0,
-          left: "auto",
-          right: "auto",
-          zIndex: 1000
+          justifyContent: "space-between",
+          alignItems: "center",
+          zIndex: 1000,
         }}
       >
         <div className="header-inner">
