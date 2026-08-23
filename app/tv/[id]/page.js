@@ -1363,7 +1363,6 @@ function TVShowDetailsContent({ params }) {
                         key={ep.id}
                         ep={ep}
                         isActive={selEpisode === ep.episode_number}
-                        onClick={() => setShowPlayer(true)}
                     onClick={() => {
                       const idx = validSeasons.findIndex(
                         (s) => s.season_number === selSeason,
@@ -1373,7 +1372,7 @@ function TVShowDetailsContent({ params }) {
                         setSelEpisode(ep.episode_number);
                       }
                     }}
-                        onClick={() => setSelEpisode(ep.episode_number)}
+                        onClick={() => setSelEpisode(ep.episode_number) setShowPlayer(true)}
                         omdb={omdbCache[`S${selSeason}E${ep.episode_number}`]}
                         index={idx}
                       />
@@ -1433,7 +1432,7 @@ function TVShowDetailsContent({ params }) {
           display: grid;
           grid-template-columns: 260px 1fr;
           gap: 44px;
-          margin-top: -120px;
+          magin-top: -120px;
           position: relative;
           z-index: 2;
           margin-bottom: 56px;
