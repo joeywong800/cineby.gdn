@@ -31,7 +31,7 @@ export default function MediaCard({
     ? `${IMG}${variant === "backdrop" ? "/w780" : "/w342"}${imgPath}`
     : null;
 
-  const width = variant === "backdrop" ? 240 : 140;
+  const width = variant === "backdrop" ? 240 : 300;
 
   const handleRemove = (e) => {
     e.preventDefault();
