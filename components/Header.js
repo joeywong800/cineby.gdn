@@ -127,9 +127,11 @@ export default function Header() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.45, ease: "easeOut" }}
         style={{
-          background: "background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, transparent 100%);",
-          position: "sticky",
+          background: "background: linear-gradient(rgba(0, 0, 0, 0.8) 5%, transparent 100%);",
+          position: "absolute",
           top: 0,
+          left: 50%,
+          transform: translateX(-50%),
           zIndex: 1000,
           backdropFil: "blur(20px)",
         }}
