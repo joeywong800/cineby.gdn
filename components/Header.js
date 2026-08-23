@@ -129,10 +129,8 @@ export default function Header() {
         style={{
           background: "background: linear-gradient(rgba(0, 0, 0, 0.8) 5%, transparent 100%);",
           display: "flex",
-          position: "absolute",
+          position: "relative",
           top: 0,
-          left: 0,
-          right: "auto",
           zIndex: 1000,
         }}
       >
