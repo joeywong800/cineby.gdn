@@ -1363,7 +1363,6 @@ function TVShowDetailsContent({ params }) {
                         key={ep.id}
                         ep={ep}
                         isActive={selEpisode === ep.episode_number}
-                        onClick={() => setSelEpisode(ep.episode_number)}
                         onClick={() => setShowPlayer(true)}
                     onClick={() => {
                       const idx = validSeasons.findIndex(
