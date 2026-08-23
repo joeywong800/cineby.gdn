@@ -131,7 +131,7 @@ export default function Header() {
           display: "flex",
           position: "absolute",
           top: 0,
-          margin: "0 auto",
+          justifyContent: "center",
           zIndex: 1000,
           backdropFil: "blur(20px)",
         }}
