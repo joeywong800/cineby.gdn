@@ -59,8 +59,8 @@ export default function ContinueWatchingCard({ item }) {
           background: "rgba(0, 0, 0, 0.65)",
           border: "1px solid rgba(255, 255, 255, 0.1)",
           borderRadius: "50%",
-          width: 18,
-          height: 18,
+          width: 24,
+          height: 24,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -80,7 +80,7 @@ export default function ContinueWatchingCard({ item }) {
               src={imageUrl}
               alt={item.title || item.name}
               fill
-              sizes="(max-width: 768px) 140px, 140px"
+              sizes="(max-width: 768px) 200x, 200px"
               style={{ objectFit: "cover", display: "block" }}
             />
 
@@ -155,8 +155,8 @@ export default function ContinueWatchingCard({ item }) {
             background: rgba(0, 0, 0, 0.65);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 50%;
-            width: 18px;
-            height: 18px;
+            width: 24x;
+            height: 24px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -297,7 +297,7 @@ export default function ContinueWatchingCard({ item }) {
           }
           .cw-progress-fill {
             height: 100%;
-            background: #ffc13c;
+            background: #f73718;
             border-radius: 0 1px 1px 0;
             transition: width 0.3s ease;
           }
