@@ -33,10 +33,10 @@ export default function ContinueWatchingCard({ item }) {
   const timestamp = getTimestamp();
   const episodeInfo = getEpisodeInfo();
 
-  const imageUrl = item.backdrop_path
-    ? `https://image.tmdb.org/t/p/w500${item.backdrop_path}`
-    : item.poster_path
-      ? `https://image.tmdb.org/t/p/w342${item.poster_path}`
+  const imageUrl = item.poster_path
+    ? `https://image.tmdb.org/t/p/w342${item.poster_path}`
+    : item.backdrop_path
+      ? `https://image.tmdb.org/t/p/w500${item.backdrop_path}`
       : "/placeholder.jpg";
 
   const linkUrl =
@@ -53,15 +53,17 @@ export default function ContinueWatchingCard({ item }) {
         aria-label="Remove from continue watching"
         style={{
           position: "absolute",
-          top: 6px,
-          right: 6px,
+          top: 6,
+          right: 6,
           zIndex: 20,
           background: "rgba(0, 0, 0, 0.65)",
           border: "1px solid rgba(255, 255, 255, 0.1)",
           borderRadius: "50%",
-          width: 24,
-          height: 24,
-          display: "block",
+          width: 18,
+          height: 18,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
           cursor: "pointer",
           color: "rgba(255, 255, 255, 0.7)",
           backdropFilter: "blur(4px)",
@@ -78,7 +80,7 @@ export default function ContinueWatchingCard({ item }) {
               src={imageUrl}
               alt={item.title || item.name}
               fill
-              sizes="(max-width: 768px) 320x, 180px"
+              sizes="(max-width: 768px) 140px, 140px"
               style={{ objectFit: "cover", display: "block" }}
             />
 
@@ -121,8 +123,6 @@ export default function ContinueWatchingCard({ item }) {
           /* ── Shell ───────────────────────────────── */
           .cw-card {
             position: relative;
-            width: 320px;
-            height: 180px;
             background: #0d0d0f;
             border-radius: 8px;
             overflow: hidden;
@@ -134,10 +134,10 @@ export default function ContinueWatchingCard({ item }) {
               box-shadow 0.28s ease;
           }
           .cw-card:hover {
-            transform: translateY(-0px);
+            transform: translateY(-4px) scale(1.02);
             box-shadow:
               0 12px 28px rgba(0, 0, 0, 0.7),
-              0 0 0 1px rgba(255, 255, 255, 0.22),
+              0 0 0 1px rgba(255, 193, 60, 0.22),
               0 0 18px rgba(255, 193, 60, 0.07);
           }
           .cw-card:active {
@@ -154,9 +154,9 @@ export default function ContinueWatchingCard({ item }) {
             background: rgba(0, 0, 0, 0.65);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 50%;
-            width: 24x;
-            height: 24px;
-            display: block;
+            width: 18px;
+            height: 18px;
+            display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
@@ -182,9 +182,7 @@ export default function ContinueWatchingCard({ item }) {
           /* ── Thumb ───────────────────────────────── */
           .cw-thumb {
             position: relative;
-            width: 320px;
-            Height: 180px;
-            aspect-ratio: 16 / 9;
+            aspect-ratio: 2 / 3;
             overflow: hidden;
             background: #111114;
           }
@@ -198,6 +196,7 @@ export default function ContinueWatchingCard({ item }) {
               filter 0.35s ease;
           }
           .cw-card:hover .cw-thumb img {
+            transform: scale(1.06);
             filter: brightness(0.42) saturate(1.1);
           }
           .cw-thumb::before {
@@ -206,7 +205,7 @@ export default function ContinueWatchingCard({ item }) {
             bottom: 0;
             left: 0;
             right: 0;
-            height: 100%;
+            height: 55%;
             background: linear-gradient(
               to top,
               rgba(13, 13, 15, 0.88) 0%,
@@ -233,7 +232,7 @@ export default function ContinueWatchingCard({ item }) {
           .cw-play-btn {
             width: 44px;
             height: 44px;
-            background: rgba(247, 55, 24, 0.92);
+            background: rgba(255, 193, 60, 0.92);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -297,7 +296,7 @@ export default function ContinueWatchingCard({ item }) {
           }
           .cw-progress-fill {
             height: 100%;
-            background: #f73718;
+            background: #ffc13c;
             border-radius: 0 1px 1px 0;
             transition: width 0.3s ease;
           }
