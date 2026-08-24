@@ -31,7 +31,7 @@ export default function MediaCard({
     ? `${IMG}${variant === "backdrop" ? "/w780" : "/w342"}${imgPath}`
     : null;
 
-  const width = variant === "backdrop" ? 240 : 300;
+  const width = variant === "backdrop" ? 240 : 140;
 
   const handleRemove = (e) => {
     e.preventDefault();
@@ -68,8 +68,8 @@ export default function MediaCard({
           fill
           sizes={
             variant === "backdrop"
-              ? "(max-width: 768px) 140px, 140px"
-              : "(max-width: 768px) 200px, 200px"
+              ? "(max-width: 768px) 240px, 240px"
+              : "(max-width: 768px) 140px, 140px"
           }
           style={{
             objectFit: "cover",
@@ -179,8 +179,8 @@ export default function MediaCard({
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               style={{
-                width: 44,
-                height: 44,
+                width: 28,
+                height: 28,
                 borderRadius: "var(--radius-md)",
                 background: "rgba(0,0,0,0.7)",
                 backdropFilter: "blur(8px)",
