@@ -134,7 +134,7 @@ export default function ContinueWatchingCard({ item }) {
               box-shadow 0.28s ease;
           }
           .cw-card:hover {
-            transform: translateY(-4px) scale(1.02);
+            transform: translateY(-0px) scale(1.02);
             box-shadow:
               0 12px 28px rgba(0, 0, 0, 0.7),
               0 0 0 1px rgba(255, 193, 60, 0.22),
@@ -156,7 +156,7 @@ export default function ContinueWatchingCard({ item }) {
             border-radius: 50%;
             width: 24x;
             height: 24px;
-            display: flex;
+            display: block;
             align-items: center;
             justify-content: center;
             cursor: pointer;
