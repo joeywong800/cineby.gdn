@@ -52,7 +52,7 @@ export default function ContinueWatchingCard({ item }) {
         className="cw-remove"
         aria-label="Remove from continue watching"
         style={{
-          position: "fixed",
+          position: "absolute",
           top: 6px,
           right: 6px,
           zIndex: 20,
@@ -61,7 +61,7 @@ export default function ContinueWatchingCard({ item }) {
           borderRadius: "50%",
           width: 24,
           height: 24,
-          display: "flex",
+          display: "block",
           cursor: "pointer",
           color: "rgba(255, 255, 255, 0.7)",
           backdropFilter: "blur(4px)",
@@ -78,7 +78,7 @@ export default function ContinueWatchingCard({ item }) {
               src={imageUrl}
               alt={item.title || item.name}
               fill
-              sizes="(max-width: 768px) 300x, 300px"
+              sizes="(max-width: 768px) 320x, 180px"
               style={{ objectFit: "cover", display: "block" }}
             />
 
@@ -134,10 +134,10 @@ export default function ContinueWatchingCard({ item }) {
               box-shadow 0.28s ease;
           }
           .cw-card:hover {
-            transform: translateY(-0px) scale(1.02);
+            transform: translateY(-0px);
             box-shadow:
               0 12px 28px rgba(0, 0, 0, 0.7),
-              0 0 0 1px rgba(255, 193, 60, 0.22),
+              0 0 0 1px rgba(255, 255, 255, 0.22),
               0 0 18px rgba(255, 193, 60, 0.07);
           }
           .cw-card:active {
@@ -182,7 +182,7 @@ export default function ContinueWatchingCard({ item }) {
           /* ── Thumb ───────────────────────────────── */
           .cw-thumb {
             position: relative;
-            aspect-ratio: 2 / 3;
+            aspect-ratio: 16 / 9;
             overflow: hidden;
             background: #111114;
           }
@@ -196,7 +196,6 @@ export default function ContinueWatchingCard({ item }) {
               filter 0.35s ease;
           }
           .cw-card:hover .cw-thumb img {
-            transform: scale(1.06);
             filter: brightness(0.42) saturate(1.1);
           }
           .cw-thumb::before {
