@@ -52,16 +52,16 @@ export default function ContinueWatchingCard({ item }) {
         className="cw-remove"
         aria-label="Remove from continue watching"
         style={{
-          position: "absolute",
+          position: "fixed",
           top: 6,
           right: 6,
           zIndex: 20,
           background: "rgba(0, 0, 0, 0.65)",
           border: "1px solid rgba(255, 255, 255, 0.1)",
           borderRadius: "50%",
-          width: 48,
-          height: 48,
-          display: "flex",
+          width: 24,
+          height: 24,
+          display: "block",
           cursor: "pointer",
           color: "rgba(255, 255, 255, 0.7)",
           backdropFilter: "blur(4px)",
