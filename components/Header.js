@@ -128,7 +128,6 @@ export default function Header() {
         transition={{ duration: 0.45, ease: "easeOut" }}
         style={{
           background: "background: linear-gradient(rgba(0, 0, 0, 0.8) 5%, transparent 100%);",
-          display: "flex",
           position: "sticky",
           top: 0,
           zIndex: 1000,
