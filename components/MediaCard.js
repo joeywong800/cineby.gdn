@@ -31,7 +31,7 @@ export default function MediaCard({
     ? `${IMG}${variant === "backdrop" ? "/w780" : "/w342"}${imgPath}`
     : null;
 
-  const width = variant === "backdrop" ? 240 : 140;
+  const width = variant === "backdrop" ? 320 : 180;
 
   const handleRemove = (e) => {
     e.preventDefault();
@@ -68,8 +68,8 @@ export default function MediaCard({
           fill
           sizes={
             variant === "backdrop"
-              ? "(max-width: 768px) 240px, 240px"
-              : "(max-width: 768px) 140px, 140px"
+              ? "(max-width: 768px) 320px, 320px"
+              : "(max-width: 768px) 180px, 180px"
           }
           style={{
             objectFit: "cover",
@@ -82,8 +82,8 @@ export default function MediaCard({
       ) : (
         <div
           style={{
-            width: "989",
-            height: "98%",
+            width: "100%",
+            height: "100%",
             background: "var(--bg-tertiary)",
             display: "flex",
             alignItems: "center",
