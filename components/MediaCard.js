@@ -69,7 +69,7 @@ export default function MediaCard({
           sizes={
             variant === "backdrop"
               ? "(max-width: 768px) 320px, 320px"
-              : "(max-width: 768px) 180px, 180px"
+              : "(max-width: 768px) 190px, 190px"
           }
           style={{
             objectFit: "cover",
