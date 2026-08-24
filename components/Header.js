@@ -128,7 +128,7 @@ export default function Header() {
         transition={{ duration: 0.45, ease: "easeOut" }}
         style={{
           background: "background: linear-gradient(rgba(0, 0, 0, 0.8) 5%, transparent 100%);",
-          position: "sticky",
+          position: "absolute",
           top: 0,
           zIndex: 1000,
           backdropFilter: "blur(20px)",
