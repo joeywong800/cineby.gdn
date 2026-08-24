@@ -33,10 +33,10 @@ export default function ContinueWatchingCard({ item }) {
   const timestamp = getTimestamp();
   const episodeInfo = getEpisodeInfo();
 
-  const imageUrl = item.poster_path
-    ? `https://image.tmdb.org/t/p/w342${item.poster_path}`
-    : item.backdrop_path
-      ? `https://image.tmdb.org/t/p/w500${item.backdrop_path}`
+  const imageUrl = item.backdrop_path
+    ? `https://image.tmdb.org/t/p/w500${item.backdrop_path}`
+    : item.poster_path
+      ? `https://image.tmdb.org/t/p/w342${item.poster_path}`
       : "/placeholder.jpg";
 
   const linkUrl =
@@ -80,7 +80,7 @@ export default function ContinueWatchingCard({ item }) {
               src={imageUrl}
               alt={item.title || item.name}
               fill
-              sizes="(max-width: 768px) 200x, 200px"
+              sizes="(max-width: 768px) 300x, 300px"
               style={{ objectFit: "cover", display: "block" }}
             />
 
@@ -123,7 +123,7 @@ export default function ContinueWatchingCard({ item }) {
           /* ── Shell ───────────────────────────────── */
           .cw-card {
             position: relative;
-            width: 200px;
+            width: 300px;
             background: #0d0d0f;
             border-radius: 8px;
             overflow: hidden;
