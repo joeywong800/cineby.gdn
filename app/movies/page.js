@@ -698,7 +698,7 @@ function MoviesContent() {
             }}
           >
             {movies.map((m, i) => (
-              <MediaCard key={m.id} item={m} type="movie" index={i} />
+              <MediaCard key={m.id} item={m} type="movie" variant="backdrop" index={i} />
             ))}
           </div>
           <div
@@ -762,7 +762,7 @@ function MoviesContent() {
         .movies-grid {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-          gap: 16px;
+          gap: 3px;
           margin-bottom: 40px;
           justify-items: center;
         }
