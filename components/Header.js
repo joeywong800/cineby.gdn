@@ -132,6 +132,7 @@ export default function Header() {
           position: "relative",
           top: 0,
           zIndex: 1000,
+          backdropFilter: "blur(20px)",
         }}
       >
         <div className="header-inner">
