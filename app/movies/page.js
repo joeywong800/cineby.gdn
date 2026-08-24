@@ -13,6 +13,12 @@ import {
   X,
 } from "lucide-react";
 import MediaCard from "@/components/MediaCard";
+import ScrollRow from "@/components/ScrollRow";
+import {
+  SkeletonCard,
+  SkeletonWide,
+  SkeletonHero,
+} from "@/components/Skeleton";
 
 const API_KEY = process.env.NEXT_PUBLIC_TMDB_API_KEY;
 
