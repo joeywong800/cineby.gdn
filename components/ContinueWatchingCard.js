@@ -123,7 +123,8 @@ export default function ContinueWatchingCard({ item }) {
           /* ── Shell ───────────────────────────────── */
           .cw-card {
             position: relative;
-            width: 300px;
+            width: 320px;
+            height: 180px;
             background: #0d0d0f;
             border-radius: 8px;
             overflow: hidden;
