@@ -53,15 +53,15 @@ export default function ContinueWatchingCard({ item }) {
         aria-label="Remove from continue watching"
         style={{
           position: "fixed",
-          top: 6,
-          right: 6,
+          top: 6px,
+          right: 6px,
           zIndex: 20,
           background: "rgba(0, 0, 0, 0.65)",
           border: "1px solid rgba(255, 255, 255, 0.1)",
           borderRadius: "50%",
           width: 24,
           height: 24,
-          display: "block",
+          display: "flex",
           cursor: "pointer",
           color: "rgba(255, 255, 255, 0.7)",
           backdropFilter: "blur(4px)",
