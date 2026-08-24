@@ -455,6 +455,7 @@ export default function HomePage() {
                   key={`${item.type}-${item.id}`}
                   item={item}
                   type={item.type}
+                  variant="backdrop"
                   index={i}
                 />
               ))}
@@ -553,7 +554,7 @@ export default function HomePage() {
                   <SkeletonCard key={i} />
                 ))
               : action.map((item, i) => (
-                  <MediaCard key={item.id} item={item} type="movie" index={i} />
+                  <MediaCard key={item.id} item={item} type="movie" variant="backdrop" index={i} />
                 ))}
           </ScrollRow>
         </div>
