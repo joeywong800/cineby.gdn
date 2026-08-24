@@ -182,6 +182,8 @@ export default function ContinueWatchingCard({ item }) {
           /* ── Thumb ───────────────────────────────── */
           .cw-thumb {
             position: relative;
+            width: 320px;
+            Height: 180px;
             aspect-ratio: 16 / 9;
             overflow: hidden;
             background: #111114;
@@ -204,7 +206,7 @@ export default function ContinueWatchingCard({ item }) {
             bottom: 0;
             left: 0;
             right: 0;
-            height: 55%;
+            height: 100%;
             background: linear-gradient(
               to top,
               rgba(13, 13, 15, 0.88) 0%,
