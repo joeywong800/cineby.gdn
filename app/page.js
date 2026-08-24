@@ -476,7 +476,7 @@ export default function HomePage() {
                   <SkeletonCard key={i} />
                 ))
               : trending.map((item, i) => (
-                  <MediaCard key={item.id} item={item} index={i} />
+                  <MediaCard key={item.id} item={item} variant="backdrop" index={i} />
                 ))}
           </ScrollRow>
         </div>
@@ -494,7 +494,7 @@ export default function HomePage() {
                   <SkeletonCard key={i} />
                 ))
               : popularMovies.map((item, i) => (
-                  <MediaCard key={item.id} item={item} type="movie" index={i} />
+                  <MediaCard key={item.id} item={item} variant="backdrop" type="movie" index={i} />
                 ))}
           </ScrollRow>
         </div>
@@ -536,7 +536,7 @@ export default function HomePage() {
                   <SkeletonCard key={i} />
                 ))
               : topRated.map((item, i) => (
-                  <MediaCard key={item.id} item={item} type="movie" index={i} />
+                  <MediaCard key={item.id} item={item} variant="backdrop" type="movie" index={i} />
                 ))}
           </ScrollRow>
         </div>
