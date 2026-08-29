@@ -1,4 +1,4 @@
-# 🎬 Flixet
+# 🎬 Cineby.gdn
 
 A modern, free movie and TV show streaming aggregator built with Next.js. Stream thousands of movies, TV shows, and anime without any subscription.
 
